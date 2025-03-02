@@ -10,9 +10,9 @@ def send_alert_message(to_number: str, message: str) -> bool:
     
     try:
         # Get credentials from environment variables
-        account_sid = 'ACa216910c2f22a8a0271a6d6ce9b2ccce'
-        auth_token = 'fe964669971664d3f7a8f0def92645aa'
-        from_number = '+18163236664'
+        account_sid = 'account_sid'
+        auth_token = 'auth_token'
+        from_number = 'from_number'
         # Validate all required credentials are present
         if not all([account_sid, auth_token, from_number, to_number]):
             missing_vars = [var for var, val in {
